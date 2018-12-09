@@ -8,7 +8,10 @@ while [[ $dirfil != $a ]] && [[ $a != "q" ]]
 do
 	echo "how many files in this directory?"
 	read a
-	if [[ $a -gt $dirfil ]]
+	if [[ $a =~ "q" ]]
+	then
+		echo "input 'q'"
+	elif [[ $a -gt $dirfil ]]
 	then
 		echo "too high, guess again or press 'q' to quit"
 	elif [[ $a -lt $dirfil ]]
@@ -17,9 +20,6 @@ do
 	elif [[ $a -eq $dirfil ]]
 	then
 		echo "There are $dirfil files in this directory!"
-	elif [[ $a =~ "q" ]]
-	then
-		echo "input q"
 	else
 		echo "input not understood, try again. Input an integer number for a guess or type q to quit"
 	fi
