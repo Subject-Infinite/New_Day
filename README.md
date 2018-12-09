@@ -1,8 +1,8 @@
 the current project is: 
-/home/dionea/New_Day
-
+wd
+#####
 time and date of running make is: 
-Sun Dec  9 00:32:12 STD 2018
+Sun Dec  9 00:38:22 STD 2018
 
 number of lines of code in guessinggame.sh: 
 38
