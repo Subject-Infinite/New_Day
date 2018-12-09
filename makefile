@@ -1,6 +1,8 @@
 README.md: guessinggame.sh
 	touch README.md
-	echo "the current project is: " > README.md
+	echo "#It's a New Day, yes it is!" > README.md
+	echo "" >> README.md
+	echo "the current project is: " >> README.md
 	pwd >> README.md
 	echo "" >> README.md
 	echo "time and date of running make is: " >> README.md
