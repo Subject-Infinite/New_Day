@@ -1,9 +1,7 @@
 touch transient.txt
 ls -l > transient.txt
 dirfil=$(expr $(wc -l < transient.txt) - 2 )
-echo "dirfl = $dirfil"
 a=0
-echo "a =  $a"
 while [[ $dirfil != $a ]] && [[ $a != "q" ]]
 do
 	echo "how many files in this directory?"
